@@ -1,7 +1,7 @@
 ﻿using Event_and_Ticket.Models;
 using Microsoft.EntityFrameworkCore;
 //Author: Firaol Baneta
-//Date : 12/05/2023
+//Date : 12/05/2023.
 namespace Event_and_Ticket.Models
 {
     public class MovieContext : DbContext
