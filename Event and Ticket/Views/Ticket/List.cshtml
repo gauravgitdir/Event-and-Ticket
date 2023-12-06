@@ -1,0 +1,38 @@
+﻿@model List<Ticket>
+
+@{
+    ViewData["Title"] = "Ticket List";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    <a asp-action="Add" class="btn btn-primary">Add New Ticket</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Ticket Type</th>
+            <th>Price</th>
+            <th>Quantity Available</th>
+            <!-- Add other relevant columns -->
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var ticket in Model)
+        {
+            <tr>
+                <td>@ticket.TicketType</td>
+                <td>@ticket.Price</td>
+                <td>@ticket.QuantityAvailable</td>
+                <!-- Add other columns here -->
+                <td>
+                    <a asp-action="Edit" asp-route-id="@ticket.TicketId">Edit</a> |
+                    <a asp-action="Delete" asp-route-id="@ticket.TicketId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
