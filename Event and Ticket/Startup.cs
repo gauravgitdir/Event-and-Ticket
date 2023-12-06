@@ -4,6 +4,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using Event_and_Ticket.Models;
 //Author:Firaol Baneta
+//date: 12/01/2023
+//Movie tickets
 namespace Event_and_Ticket
 {
     public class Startup

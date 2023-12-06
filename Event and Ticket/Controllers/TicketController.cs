@@ -2,7 +2,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
-
+//Author:Firaol Baneta
+//date: 12/01/2023
+//Movie tickets
 namespace Event_and_Ticket.Controllers
 {
     public class TicketController : Controller
