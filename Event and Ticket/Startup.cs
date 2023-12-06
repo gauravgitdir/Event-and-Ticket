@@ -3,7 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using Event_and_Ticket.Models;
-
+//Author:Firaol Baneta
 namespace Event_and_Ticket
 {
     public class Startup
